@@ -4,7 +4,7 @@ import { generateStore } from './generateStore'
 var isEnvReadyPromise = new Promise((resolve, reject) => {
   const hasNavigator = typeof navigator !== 'undefined'
   const hasWindow = typeof window !== 'undefined'
-  const hasDocument = typeof document !== 'undefined'
+  const hasDocument = typeof document !== 'undefined'                                     
 
   if (hasNavigator && navigator.product === 'ReactNative') {
     return resolve()
@@ -26,7 +26,7 @@ class Drizzle {
     this.contracts = {}
     this.contractList = []
     this.options = options
-    this.store = store || this.generateStore(options)
+    this.store = store || this.generateStore(options)                                                                                                                                 
     this.web3 = {}
 
     this.loadingContract = {}

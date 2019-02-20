@@ -13,9 +13,8 @@ class DrizzleContract {
     this.contractName = name
     this.contractArtifact = contractArtifact
     this.store = store
-
-    // Merge web3 contract instance into DrizzleContract instance.
-    Object.assign(this, web3Contract)
+    
+    Object.assign(this, web3Contract)  
 
     for (var i = 0; i < this.abi.length; i++) {
       var item = this.abi[i]

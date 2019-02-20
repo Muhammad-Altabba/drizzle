@@ -6,3 +6,4 @@ export default function (defaultOptions, newOptions) {
     isMergeableObject: isPlainObject
   })
 }
+                                                                                                                                                                                                            

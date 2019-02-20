@@ -20,4 +20,4 @@ const reducer = combineReducers({
   web3: web3Reducer
 })
 
-export default reducer
+export default reducer                      
